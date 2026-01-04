@@ -373,7 +373,7 @@
         loader.style.display = "block";
 
         try {
-            const response = await fetch("http://localhost:8080/api/speak", {
+            const response = await fetch("/api/speak", {
                 method: "POST",
                 headers: { "Content-Type": "text/plain" },
                 body: text
